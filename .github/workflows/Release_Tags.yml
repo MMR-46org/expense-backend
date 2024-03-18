@@ -11,5 +11,15 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v4
-      - run: ls
-      - run: tail index.js
+
+      - name: SAST scans
+        run: echo SAST scans
+
+      - name: SCA scans
+        run: echo SCA scans
+
+      - name: secret detection in source code
+        run: echo secret detection in source code
+
+      - name: artifact produce
+        run: echo artifact produce

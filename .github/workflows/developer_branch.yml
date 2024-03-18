@@ -6,10 +6,18 @@ on:
       - 'XPNS-*'
 
 jobs:
-  check-bats-version:
+  CI-Steps:
     runs-on: self-hosted
     steps:
       - name: checkout
         uses: actions/checkout@v4
-      - run: ls
-      - run: tail index.js
+
+      - name: Unit Tests
+        run: echo unit tests
+
+      - name: Integration Tests
+        run: echo Integration Tests
+
+      - name: code quality
+        run: echo code quality
+

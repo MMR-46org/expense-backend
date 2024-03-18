@@ -11,5 +11,18 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v4
-      - run: ls
-      - run: tail index.js
+
+      - name: unit tests
+        run: echo unit tests
+
+      - name: integration tests
+        run: echo integration tests
+
+      - name: SAST scans
+        run: echo SAST Scans
+
+      - name: Detect Secrets in source code
+        run: echo detect secrets in source code
+
+      - name: code quality
+        run: echo code quality
