@@ -6,10 +6,11 @@ on:
       - "v*"
 
 
-env:
-  service_name: expense_backend
+
 
 jobs:
   check-bats-version:
     uses: MMR-46org/github-actions/.github/workflows/Release_Tags.yml@main
     secrets: inherit
+    with:
+      service_name: expense-backend
