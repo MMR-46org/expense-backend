@@ -15,7 +15,6 @@
     "express": "^4.17.1",
     "mysql": "^2.18.1",
     "node-fetch": "^2.6.1",
-    "moment" : "latest",
-    "npm install": "latest"
+    "moment" : "latest"
   }
 }
